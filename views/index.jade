@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  .container-fluid
+    .row
+      .col-xs-4.col-xs-push-4
+        .hero-circle.center-block
+          .hero-face
+            #hour.hero-hour
+            #minute.hero-minute
+            #second.hero-second
+    .row
+      .col-xs-6.col-xs-push-3
+        form.form-horizontal
+          .form-group
+            label.control-label.col-xs-4 Pick a time
+            .col-xs-8
+              input.form-control(type='text', placeholder='Next Tuesday at 8pm', ng-model='adjustment', ng-model-options="{ debounce: 300 }")
+
+          .form-group
+            label.control-label.col-xs-4 In San Francisco:
+            .col-xs-8
+              input.form-control(type='text', ng-model='sanfrancisco')
+          .form-group
+            label.control-label.col-xs-4 In Shanghai:
+            .col-xs-8
+              input.form-control(type='text', ng-model='shanghai')
+          .form-group
+            label.control-label.col-xs-4 In Sydney:
+            .col-xs-8
+              input.form-control(type='text', ng-model='sydney')
