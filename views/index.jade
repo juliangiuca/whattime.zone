@@ -10,22 +10,31 @@ block content
             #minute.hero-minute
             #second.hero-second
     .row
+      include slider
+    .row
       .col-xs-6.col-xs-push-3
         form.form-horizontal
           .form-group
             label.control-label.col-xs-4 Pick a time
             .col-xs-8
               input.form-control(type='text', placeholder='Next Tuesday at 8pm', ng-model='adjustment', ng-model-options="{ debounce: 300 }")
-
+    .row
+      .col-xs-8.col-xs-push-2
+        .col-xs-4
           .form-group
-            label.control-label.col-xs-4 In San Francisco:
-            .col-xs-8
-              input.form-control(type='text', ng-model='sanfrancisco')
+            label.control-label.col-xs-8.col-xs-push-2.text-center In San Francisco:
+            .row
+              .col-xs-12
+                input.form-control(type='text', ng-model='sanfrancisco')
+        .col-xs-4
           .form-group
-            label.control-label.col-xs-4 In Shanghai:
-            .col-xs-8
-              input.form-control(type='text', ng-model='shanghai')
+            label.control-label.col-xs-8.col-xs-push-2.text-center In Shanghai:
+            .row
+              .col-xs-12
+                input.form-control(type='text', ng-model='shanghai')
+        .col-xs-4
           .form-group
-            label.control-label.col-xs-4 In Sydney:
-            .col-xs-8
-              input.form-control(type='text', ng-model='sydney')
+            label.control-label.col-xs-8.col-xs-push-2.text-center In Sydney:
+            .row
+              .col-xs-12
+                input.form-control(type='text', ng-model='sydney')

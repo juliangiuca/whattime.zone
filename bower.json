@@ -1,7 +1,7 @@
 {
-  "name": "sfSydSha",
+  "name": "whatime.zone",
   "main": "index.js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "authors": [
     "Julian Giuca <julian.giuca@gmail.com>"
   ],
@@ -24,6 +24,7 @@
     "jstimezonedetect": "~1.0.5",
     "angular": "~1.3.14",
     "jquery": "~2.1.3",
-    "chrono": "~1.0.2"
+    "chrono": "~1.0.2",
+    "lodash": "~3.5.0"
   }
 }
